@@ -1,5 +1,8 @@
 # web-scraper-app
 
-## Tutorial for building a Node.js Web Scraper app
+#### The purpose of this app is to learn about the technologies required to scrape data from a website and parse the data into json format for rendering on the front end.
 
-https://www.freecodecamp.org/news/the-ultimate-guide-to-web-scraping-with-node-js-daa2027dcd3/
+## Scrapers
+- Potus Scraper
+- Trail Status Scraper
+

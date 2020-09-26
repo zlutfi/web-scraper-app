@@ -12,6 +12,13 @@ axios(url)
 
 		trailStatusWrapper.each(function () {
 
+			// Searches for the class and saves the text value to a variable
+			let trailName = $(this).find('.tinyTrailStatusTitle').text();
+			let trailStatus = $(this).find('.sr-only').text();
+			let trailUpdated = $(this).find('.tinyTrailStatusUpdated').text();
+
+			// Delete empty entries
+
 			function isEmpty(obj) {
 				for (var key in obj) {
 					if (obj.hasOwnProperty(key))
@@ -19,22 +26,7 @@ axios(url)
 				}
 				return true;
 			}
-			// function findSelector (arr) {
-			// 	var selector = arr;
-			// 	var find = $(this).find(selector).text();
-			// 	return find
-			// }
 
-			// // Searches for the class and saves the text value to a variable
-			// let trailName = findSelector('.tinyTrailStatus');
-			// let trailStatus = findSelector('.sr-only');
-			// let trailUpdated = findSelector('.tinyTrailStatusUpdated');
-			let trailName = $(this).find('.tinyTrailStatusTitle').text();
-			let trailStatus = $(this).find('.sr-only').text();
-			let trailUpdated = $(this).find('.tinyTrailStatusUpdated').text();
-
-
-			// Delete empty entries
 			if (isEmpty(trailName, trailStatus, trailUpdated)) {
 				// Object is empty 
 				delete trailName, trailStatus, trailUpdated
@@ -49,7 +41,6 @@ axios(url)
 			}
 
 		})
-
 
 		// Log the result to the console for testing
 		console.log(trailInfo);

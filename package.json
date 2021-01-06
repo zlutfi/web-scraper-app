@@ -4,7 +4,7 @@
   "description": "The purpose of this app is to learn about the technologies required to scrape data from a website and parse the data into json format for rendering on the front end.",
   "main": "src/scrapers/trails/trailParse.js",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "puppeteer": "^5.3.1"
   }
